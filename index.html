@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SiennaRoofing | Essex Roofing Specialists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiennaRoofing</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>SiennaRoofing</h1>
-    <p>Let’s raise the roof — together.</p>
     <nav>
       <a href="#about">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="hero">
+      <h1>SiennaRoofing</h1>
+      <p>Let’s raise the roof — together</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+    </div>
   </header>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>SiennaRoofing is a family-run roofing company serving all of Essex. We bring craftsmanship, honesty, and long-term care to every project.</p>
+    <p>We’re a family‑run roofing company serving all of Essex. Craftsmanship, honesty, and long‑term care are at the heart of what we do.</p>
+    <img src="images/hero.jpg" alt="Roofing team at work">
   </section>
 
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <ul>
-      <li>Tiled Roof Restoration – Chelmsford</li>
-      <li>Flat Roof Installation – Colchester</li>
-      <li>Emergency Repair – Basildon</li>
-    </ul>
+    <h2>Our Work</h2>
+    <div class="grid">
+      <div><img src="images/roof1.jpg" alt="Tiled Roof"><p>Tiled Roof Restoration – Chelmsford</p></div>
+      <div><img src="images/roof2.jpg" alt="Flat Roof"><p>Flat Roof Installation – Colchester</p></div>
+      <div><img src="images/roof3.jpg" alt="Emergency Repair"><p>Emergency Repair – Basildon</p></div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: info@siennaroofing.co.uk</p>
-    <p>Phone: 0800-ROOF-NOW</p>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@siennaroofing.co.uk">info@siennaroofing.co.uk</a></p>
+    <p>Phone: <a href="tel:0800ROOFNOW">0800‑ROOF‑NOW</a></p>
   </section>
 
   <footer>
