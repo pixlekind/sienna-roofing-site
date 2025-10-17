@@ -1,65 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sienna Roofing</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="nav">
-    <div class="logo">🏠 Sienna Roofing</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#trust">Trust</a>
-      <a href="#contact">Contact</a>
-      <button id="modeToggle" class="btn small">🌙</button>
-    </nav>
-  </header>
-
-  <section class="hero" style="background-image:url('assets/images/hero.jpg')">
-    <div class="overlay">
-      <h1>Fast. Fair. Local.</h1>
-      <p>24/7 Emergency Roofing & Repairs across Essex.</p>
-      <a href="#contact" class="btn">Request a Quote</a>
-    </div>
-  </section>
-
-  <section id="trust" class="section trust">
-    <div class="badges">
-      <div>✔ Fully Insured</div>
-      <div>✔ 24/7 Callout</div>
-      <div>✔ Local Experts</div>
-    </div>
-  </section>
-
-  <section id="services" class="section highlights">
-    <div class="card"><h3>Emergency Repairs</h3><p>Rapid response when it matters most.</p></div>
-    <div class="card"><h3>Roof Replacement</h3><p>Durable, energy-efficient materials.</p></div>
-    <div class="card"><h3>Maintenance</h3><p>Keep your roof in perfect condition all year.</p></div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form" onsubmit="return false;">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button class="btn">Send Message</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Sienna Roofing — All Rights Reserved</p>
-  </footer>
-
-  <script>
-    // Dark / Light mode toggle
-    const btn = document.getElementById('modeToggle');
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('light');
-      btn.textContent = document.body.classList.contains('light') ? '🌞' : '🌙';
-    });
-  </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Home | Sienna Roofing</title><link rel="stylesheet" href="style.css"/></head><body>
+<header class="nav"><div class="logo">🏠 Sienna Roofing</div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><button id="modeToggle" class="btn small">🌙</button></nav></header>
+<section class="hero" style="background-image:url('assets/images/hero.jpg')">
+  <div class="overlay">
+    <h1>Fast. Fair. Local.</h1>
+    <p>Emergency roofing and repair services across Essex.</p>
+    <a href="contact.html" class="btn">Request a Quote</a>
+  </div>
+</section>
+<section class="section highlights">
+  <div class="card"><h3>Emergency Repairs</h3><p>Fast response when you need it most.</p></div>
+  <div class="card"><h3>Roof Replacement</h3><p>Durable, modern materials with fair pricing.</p></div>
+  <div class="card"><h3>Maintenance</h3><p>Keep your roof in top condition year-round.</p></div>
+</section>
+<footer class="footer"><p>© 2025 Sienna Roofing — All Rights Reserved</p></footer>
+<script src="theme.js"></script>
+</body></html>
