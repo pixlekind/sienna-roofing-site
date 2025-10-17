@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Sienna Roofing</title>
+  <meta name="description" content="Professional roofing and repair services across Essex." />
+  <link rel="icon" href="assets/images/roof1.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">🏠 Sienna Roofing</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <button id="modeToggle" class="btn small">🌙</button>
+    </nav>
+  </header>
+  <section class='hero' style='background-image:url(assets/images/hero.jpg)'><div class='overlay'><h1>Fast. Fair. Local.</h1><p>24/7 Emergency Roofing & Repairs across Essex.</p><a href='contact.html' class='btn'>Request a Quote</a></div></section>
+  <footer class="footer">
+    <p>© 2025 Sienna Roofing — All Rights Reserved</p>
+  </footer>
+  <script>
+    const btn = document.getElementById('modeToggle');
+    if (btn) btn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      btn.textContent = document.body.classList.contains('light') ? '🌞' : '🌙';
+    });
+  </script>
+</body>
+</html>
