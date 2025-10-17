@@ -1,12 +1,97 @@
-body { margin:0; font-family:sans-serif; line-height:1.6; }
-header { background:#5a3825; color:#fff; padding:1rem; text-align:center; }
-nav { display:flex; justify-content:center; gap:1rem; margin-bottom:1rem; }
-nav a { color:#fff; text-decoration:none; font-weight:bold; }
-.hero { padding:2rem; }
-.btn { background:#f4a261; color:#fff; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; }
-section { padding:2rem; max-width:900px; margin:auto; }
-.grid { display:flex; gap:1rem; flex-wrap:wrap; }
-.grid img { width:30%; border-radius:8px; }
-footer { background:#333; color:#fff; text-align:center; padding:1rem; }
-.dark body { background:#111; color:#eee; }
-.dark header { background:#222; }
+:root {
+  --bg: #f9fafb;
+  --text: #222;
+  --accent: #006d77;
+  --accent2: #e76f51;
+  --header: #1d3557;
+  --link-hover: #00b4d8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--header);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--link-hover);
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--accent), var(--link-hover));
+  color: #fff;
+  text-align: center;
+}
+.hero h1 { font-size: 3rem; margin: 0 0 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+.btn {
+  background: var(--accent2);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover { background: #d65a3b; }
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 { color: var(--accent); margin-bottom: 1rem; }
+
+.grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.grid img {
+  width: 32%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: var(--header);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Dark mode overrides */
+body.dark {
+  --bg: #111;
+  --text: #eee;
+  --header: #222;
+}
