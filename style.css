@@ -1,9 +1,8 @@
 :root {
-  --bg: #f9fafb;
+  --bg: #ffffff;
   --text: #222;
-  --accent: #006d77;
-  --accent2: #e76f51;
-  --header: #1d3557;
+  --accent: #1d3557;   /* deep slate blue */
+  --accent2: #e76f51;  /* orange from logo */
   --link-hover: #00b4d8;
 }
 
@@ -17,30 +16,31 @@ body {
 }
 
 header {
-  background: var(--header);
+  background: var(--accent);
   color: #fff;
   padding: 1rem;
   text-align: center;
 }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
 }
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s;
 }
-nav a:hover {
-  color: var(--link-hover);
-}
-#theme-toggle {
+nav a:hover { color: var(--link-hover); }
+#theme-toggle, .hamburger {
   background: none;
   border: none;
   color: #fff;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -48,10 +48,8 @@ nav a:hover {
   padding: 3rem 1rem;
   background: linear-gradient(135deg, var(--accent), var(--link-hover));
   color: #fff;
-  text-align: center;
 }
-.hero h1 { font-size: 3rem; margin: 0 0 1rem; }
-.hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+.hero h1 { font-size: 2.5rem; margin: 0 0 1rem; }
 .btn {
   background: var(--accent2);
   color: #fff;
@@ -59,7 +57,6 @@ nav a:hover {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.2s;
 }
 .btn:hover { background: #d65a3b; }
 
@@ -82,16 +79,30 @@ h2 { color: var(--accent); margin-bottom: 1rem; }
 }
 
 footer {
-  background: var(--header);
+  background: var(--accent);
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-/* Dark mode overrides */
+/* Dark mode */
 body.dark {
   --bg: #111;
   --text: #eee;
-  --header: #222;
+  --accent: #222;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--accent);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+  }
+  nav.show { display: flex; }
 }
