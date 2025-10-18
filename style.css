@@ -1,0 +1,14 @@
+body {font-family:'Inter',sans-serif;margin:0;background:#0A1A2F;color:#fff;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#132F4C;position:sticky;top:0;z-index:10;}
+.navbar ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0;}
+.navbar a{color:#FFD700;text-decoration:none;font-weight:600;}
+.navbar a.active{text-decoration:underline;}
+.logo{height:48px;}
+.hero{background-size:cover;background-position:center;text-align:center;padding:6rem 1rem;position:relative;z-index:1;}
+.overlay{background:rgba(0,0,0,0.55);display:inline-block;padding:2rem;border-radius:12px;position:relative;z-index:1;}
+.btn{background:#FFD700;color:#0A1A2F;border:none;padding:0.8rem 1.6rem;border-radius:6px;cursor:pointer;font-weight:600;}
+.btn:hover{background:#FFC300;}
+footer{text-align:center;padding:1rem;background:#132F4C;color:#FFD700;margin-top:2rem;}
+.portfolio-grid{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
+.portfolio-item{flex:1 1 30%;text-align:center;}
+.contact-form{display:flex;flex-direction:column;gap:1rem;max-width:400px;margin:2rem auto;}
